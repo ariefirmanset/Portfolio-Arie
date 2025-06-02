@@ -38,8 +38,7 @@
 | Project | Description | Tech Stack |
 |--------|-------------|------------|
 | [🌐 Personal Portfolio](https://ariefirmanset.github.io/Portfolio-Arie/) | A modern personal website to showcase my work | HTML, CSS, JS |
-| [📱 Simple Weather App](https://github.com/arifdev/weather-app) | A responsive weather app using API | JavaScript, Bootstrap |
-| [🧠 Quiz Game](https://github.com/arifdev/quiz-game) | A simple interactive quiz game | Vanilla JS |
+| [☕ Cafe Bisa Ngopi](https://github.com/ariefirmanset/Restaurant) | Cafe Bisa Ngopi is a web-based POS system for a restaurant with three user roles: admin, manager, and cashier. It supports cash-only transactions, menu management, sales reporting, and user activity tracking—designed to streamline daily cafe operations. | Flask, Mysql  |
 
 ---
 
@@ -53,8 +52,8 @@
 ### 📫 How to Reach Me
 
 - Email: afirmansetiawan@gmail.com  
-- LinkedIn: [linkedin.com/in/arifdev](https://www.linkedin.com/in/arie-firman-setiawan/)  
-- Website: [myportfolio.com](https://ariefirmanset.github.io/Portfolio-Arie/)
+- LinkedIn: [linkedin.com/in/arie-firman-setiawan](https://www.linkedin.com/in/arie-firman-setiawan/)  
+- Website: [Portfolio-Arie](https://ariefirmanset.github.io/Portfolio-Arie/)
 
 ---
 
