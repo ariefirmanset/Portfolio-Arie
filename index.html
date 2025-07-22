@@ -20,9 +20,21 @@
       crossorigin="anonymous"
     />
 
-    <!-- Google Fonts -->
+    <!-- Swiper -->
+    <!-- Swiper CSS -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Days+One&family=Michroma&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="static/style.css" />
@@ -41,6 +53,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificate">Certificate</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
           <button id="theme-toggle" class="theme-toggle">
@@ -197,9 +210,9 @@
         </div>
       </div>
     </section>
+    <!-- End -->
 
     <!-- Projects Section -->
-
     <section id="projects" class="projects">
       <div class="container">
         <h2 class="section-title" data-aos="fade-up">My Projects</h2>
@@ -321,6 +334,38 @@
         </div>
       </div>
     </section>
+    <!-- End -->
+
+    <!-- Certificate -->
+    <section id="certificate" class="certificate">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Certificate</h2>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="static/certificate/Sertifikat GameLab Construct_1.webp"
+                alt="Sertifikat 1"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="static/certificate/Sertifikat GameLab JavaScript_1.webp"
+                alt="Sertifikat 2"
+              />
+            </div>
+          </div>
+
+          <!-- Navigasi -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+
+          <!-- Pagination (bulatan bawah) -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- End -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
@@ -742,6 +787,36 @@
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        loop: true,
+        grabCursor: true,
+        spaceBetween: 20,
+        centeredSlides: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          640: {
+            slidesPerView: 1.2,
+          },
+          768: {
+            slidesPerView: 1.5,
+          },
+          1024: {
+            slidesPerView: 2,
+          },
+        },
+      });
+    </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="static/script.js"></script>
   </body>
