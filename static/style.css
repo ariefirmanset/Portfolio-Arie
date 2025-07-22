@@ -652,6 +652,10 @@ footer {
         font-size: 3rem;
     }
 
+    .hero {
+        margin-top: 50px;
+    }
+
     .about-content {
         flex-direction: column;
     }
@@ -666,30 +670,13 @@ footer {
         margin-bottom: 30px;
     }
 
-    .skills-container {
-        grid-template-columns: 1fr;
-    }
+
 }
 
 @media (max-width: 900px) {
     .hero {
-        margin-top: 20px;
         height: 100vh;
     }
-
-    .skills-container {
-        display: flex;
-        overflow-x: auto;
-        gap: 20px;
-        padding-bottom: 10px;
-        scroll-snap-type: x mandatory;
-    }
-
-    .skill-item {
-        flex: 0 0 250px;
-        scroll-snap-align: start;
-    }
-
 
     .menu-toggle {
         display: block;
@@ -718,14 +705,28 @@ footer {
     }
 
     .certificate {
-        height: 80vh;
+        height: 90vh;
     }
 }
 
 @media (max-width: 768px) {
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
+
+    .skills-container {
+        display: flex;
+        overflow-x: auto;
+        gap: 20px;
+        padding-bottom: 10px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .skill-item {
+        flex: 0 0 250px;
+        scroll-snap-align: start;
+    }
+
 
     .form-row {
         flex-direction: column;
@@ -749,8 +750,8 @@ footer {
     }
 
     .profile-image {
-        max-width: 260px;
-        max-height: 260px;
+        max-width: 230px;
+        max-height: 230px;
     }
 
     .projects-container {
@@ -775,9 +776,7 @@ footer {
 
     .profile-image {
         margin-top: -40px;
-        max-width: 190px;
-        max-height: 190px;
+        max-width: 170px;
+        max-height: 170px;
     }
-
-
 }
