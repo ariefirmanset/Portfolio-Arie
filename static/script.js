@@ -30,7 +30,6 @@ navLinks.forEach((link) => {
 const themeToggle = document.getElementById("theme-toggle");
 const themeIcon = themeToggle.querySelector("i");
 
-// Check for saved theme preference or use system preference
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 const currentTheme = localStorage.getItem("theme");
 
@@ -89,10 +88,8 @@ const animateSkills = () => {
   });
 };
 
-// Initial animation for elements in viewport
 window.addEventListener("load", animateSkills);
 
-// Form submission (prevent default for demo)
 const contactForm = document.querySelector(".contact-form");
 if (contactForm) {
   contactForm.addEventListener("submit", (e) => {
@@ -103,3 +100,32 @@ if (contactForm) {
     contactForm.reset();
   });
 }
+
+const swiper = new Swiper(".mySwiper", {
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 20,
+  centeredSlides: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    640: {
+      slidesPerView: 1.2,
+    },
+    768: {
+      slidesPerView: 1.5,
+    },
+    1024: {
+      slidesPerView: 2,
+    },
+  },
+});

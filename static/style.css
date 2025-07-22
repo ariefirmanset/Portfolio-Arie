@@ -15,7 +15,7 @@
     --border-radius: 8px;
 }
 
-.dark-mode {
+body.dark-mode {
     --primary-color: #818cf8;
     --secondary-color: #4f46e5;
     --text-dark: #f9fafb;
@@ -269,8 +269,8 @@ nav ul li a:hover {
 }
 
 .profile-image {
-    width: 320px;
-    height: 320px;
+    max-width: 320px;
+    max-height: 320px;
     border-radius: 50%;
     overflow: hidden;
     border: 5px solid var(--primary-color);
@@ -278,7 +278,7 @@ nav ul li a:hover {
 
 .profile-image img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
 }
 
@@ -522,6 +522,10 @@ nav ul li a:hover {
     background-color: var(--background-dark);
 }
 
+.contact .section-title {
+    color: var(--text-white);
+}
+
 .contact-container {
     max-width: 700px;
     margin: 0 auto;
@@ -549,7 +553,7 @@ nav ul li a:hover {
     display: block;
     margin-bottom: 8px;
     font-weight: 500;
-    color: var(--text-dark);
+    color: var(--text-white);
 }
 
 .form-group input,
@@ -577,7 +581,7 @@ nav ul li a:hover {
 footer {
     padding: 30px 0;
     background-color: var(--background-light);
-    color: var(--text-white);
+    /* color: var(--text-white); */
 }
 
 .footer-content {
@@ -643,7 +647,7 @@ footer {
 }
 
 /* Responsive Styles */
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
     .hero-content h1 {
         font-size: 3rem;
     }
@@ -657,8 +661,6 @@ footer {
         justify-content: center;
     }
 
-
-
     .about-image {
 
         margin-bottom: 30px;
@@ -669,7 +671,13 @@ footer {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+    .hero {
+        margin-top: 20px;
+        height: 100vh;
+    }
+
+
     .menu-toggle {
         display: block;
     }
@@ -696,11 +704,12 @@ footer {
         margin-bottom: 30px;
     }
 
-    .hero {
-        margin-top: 70px;
-        height: 130vh;
+    .certificate {
+        height: 80vh;
     }
+}
 
+@media (max-width: 768px) {
     .hero-content h1 {
         font-size: 2.5rem;
     }
@@ -723,16 +732,16 @@ footer {
 
 @media (max-width: 576px) {
     .hero-content h1 {
-        font-size: 2rem;
+        font-size: 2.1rem;
+    }
+
+    .profile-image {
+        max-width: 260px;
+        max-height: 260px;
     }
 
     .projects-container {
         grid-template-columns: 1fr;
-    }
-
-    .hero {
-        margin-top: 70px;
-        height: 130vh;
     }
 
     .cta-buttons {
@@ -743,4 +752,19 @@ footer {
     .cta-buttons .btn {
         width: 100%;
     }
+}
+
+@media (max-width: 375px) {
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .profile-image {
+        margin-top: -40px;
+        max-width: 190px;
+        max-height: 190px;
+    }
+
+
 }
