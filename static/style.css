@@ -206,7 +206,7 @@ nav ul li a:hover {
     color: var(--text-dark);
 }
 
-/* Hero Section - UPDATED TO FULL HEIGHT */
+/* Hero Section  */
 .hero {
     height: 100vh;
     display: flex;
