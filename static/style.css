@@ -654,6 +654,7 @@ footer {
 
     .hero {
         margin-top: 50px;
+        height: 115vh;
     }
 
     .about-content {
@@ -675,7 +676,7 @@ footer {
 
 @media (max-width: 900px) {
     .hero {
-        height: 100vh;
+        height: 120vh;
     }
 
     .menu-toggle {
