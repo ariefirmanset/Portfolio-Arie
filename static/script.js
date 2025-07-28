@@ -102,7 +102,7 @@ if (contactForm) {
 }
 
 const swiper = new Swiper(".mySwiper", {
-  loop: true,
+  loop: false,
   grabCursor: true,
   spaceBetween: 20,
   centeredSlides: true,
