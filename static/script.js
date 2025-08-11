@@ -129,3 +129,11 @@ const swiper = new Swiper(".mySwiper", {
     },
   },
 });
+
+// var c = document.getElementById("myCircle");
+// var ctx = c.getContext("2d");
+// ctx.beginPath();
+// ctx.arc(350, 350, 250, 0, 2 * Math.PI);
+// ctx.lineWidth = 4;
+// ctx.strokeStyle = "White";
+// ctx.stroke();

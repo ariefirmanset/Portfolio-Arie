@@ -325,8 +325,8 @@ nav ul li a:hover {
 
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 20px;
 }
 
 .skill-item {
@@ -352,6 +352,10 @@ nav ul li a:hover {
     font-weight: 600;
     color: var(--dark-color);
     font-size: 1.1em;
+}
+
+.skill-name img {
+    width: 100px;
 }
 
 .skill-level {
@@ -722,7 +726,7 @@ footer {
     }
 
     .skill-item {
-        flex: 0 0 250px;
+        flex: 0 0 120px;
         scroll-snap-align: start;
     }
 
