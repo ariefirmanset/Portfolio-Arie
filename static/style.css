@@ -273,7 +273,7 @@ nav ul li a:hover {
     max-height: 320px;
     border-radius: 50%;
     overflow: hidden;
-    border: 5px solid var(--primary-color);
+    border: 5px solid var(--background-dark);
 }
 
 .profile-image img {
@@ -357,55 +357,6 @@ nav ul li a:hover {
 .skill-name img {
     width: 100px;
 }
-
-.skill-level {
-    font-weight: 600;
-    font-size: 0.85em;
-    padding: 5px 10px;
-    border-radius: 20px;
-    text-transform: uppercase;
-}
-
-.skill-level.beginner {
-    background-color: #fff3cd;
-    color: #856404;
-}
-
-.skill-level.intermediate {
-    background-color: #d4edda;
-    color: #155724;
-}
-
-.skill-level.advanced {
-    background-color: #cce5ff;
-    color: #004085;
-}
-
-.skill-bar {
-    height: 10px;
-    background-color: #e0e0e0;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.skill-progress {
-    height: 100%;
-    width: 100%;
-    border-radius: 5px;
-}
-
-.skill-progress.beginner {
-    background: linear-gradient(90deg, #ffc107 0%, #ffd85c 100%);
-}
-
-.skill-progress.intermediate {
-    background: linear-gradient(90deg, #28a745 0%, #78d78c 100%);
-}
-
-.skill-progress.advanced {
-    background: linear-gradient(90deg, #007bff 0%, #66b0ff 100%);
-}
-
 
 
 /* Projects Section */
