@@ -650,6 +650,7 @@ footer {
         height: 100vh;
     }
 
+
     .hero-content {
         margin-top: -45px;
     }
@@ -702,9 +703,13 @@ footer {
         font-size: 2.1rem;
     }
 
+    .hero {
+        height: 125vh;
+    }
+
     .profile-image {
-        max-width: 230px;
-        max-height: 230px;
+        max-width: 170px;
+        max-height: 170px;
     }
 
     .projects-container {
