@@ -707,11 +707,6 @@ footer {
         height: 120vh;
     }
 
-    .profile-image {
-        max-width: 200px;
-        max-height: 200px;
-    }
-
     .projects-container {
         grid-template-columns: 1fr;
     }
