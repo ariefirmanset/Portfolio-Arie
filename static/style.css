@@ -604,7 +604,7 @@ footer {
 /* Responsive Styles */
 @media (max-width: 900px) {
     .hero {
-        height: 120vh;
+        height: 100vh;
     }
 
     .menu-toggle {
@@ -646,13 +646,9 @@ footer {
     }
 
     .hero {
-        margin-top: 50px;
-        height: 100vh;
-    }
-
-
-    .hero-content {
-        margin-top: -45px;
+        min-height: 100vh;
+        margin-top: 0;
+        padding-top: 80px;
     }
 
     .about-content {
@@ -660,8 +656,13 @@ footer {
     }
 
     .hero .container {
+        display: flex;
         flex-direction: column-reverse;
+        align-items: center;
         justify-content: center;
+        /* biar di tengah */
+        gap: 20px;
+        /* atur jarak teks dan foto */
     }
 
     .hero-content h1 {
@@ -704,7 +705,7 @@ footer {
     }
 
     .hero {
-        height: 110vh;
+        height: 100vh;
     }
 
     .projects-container {
